@@ -1,0 +1,285 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+.hero {
+  height: 60vh;
+
+  background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4');
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+}
+
+/* Text styling */
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.story {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.story h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.story-text {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #e6f4ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Titles */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Text */
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+.values {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fafafa;
+}
+
+.values h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* Value cards */
+.value-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.value {
+  width: 250px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #e6f4ea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.value h3 {
+  margin-bottom: 10px;
+}
+
+.value p {
+  color: #666;
+  font-size: 14px;
+}
+.stats {
+  background: #1f7a2e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.stat h2 {
+  font-size: 28px;
+}
+
+.stat p {
+  font-size: 14px;
+}
+.team {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.team h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.team-desc {
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* Cards layout */
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.team-card {
+  background: white;
+  width: 220px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon circle */
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #e6f4ea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.team-card h3 {
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #777;
+  font-size: 14px;
+}
+.footer {
+  background: #515050;
+  padding: 40px 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer h3, .footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

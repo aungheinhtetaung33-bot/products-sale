@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camping Products Sales</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+  <h1>CPS</h1>
+  <button type="button" class="nav-toggle" aria-label="Open navigation">
+    ☰
+  </button>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+     <a href="About.html">About Us</a>
+    <a href="cart.html">Cart</a>
+    <a href="Login.html">Login</a>
+    <a href="membership.html">Membership</a>
+  </nav>
+</header>
+<section class="hero">
+     <h2>Adventure Awaits with Quality Camping Gear</h2>
+  <p>Discover premium camping equipment for your next outdoor adventure.
+    From tents to backpacks, we've got eveything you need.
+  </p>
+  <button onclick="ShopNow()">Shop Now</button>
+</section>
+<section class="features">
+  <div class="feature-box">
+    <div class="icon">🚚</div>
+    <h3>Free Shipping</h3>
+    <p>On orders over $100</p>
+  </div>
+ <div class="feature-box">
+    <div class="icon">🛡️</div>
+    <h3>Secure Payment</h3>
+    <p>100% secure transactions</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">🏅</div>
+    <h3>Quality Guaranteed</h3>
+    <p>Premium products only</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">📈</div>
+    <h3>Best Prices</h3>
+    <p>Competitive pricing</p>
+  </div>
+</section>
+<section class="popular-products">
+  <h2>Popular Products</h2>
+  <div class="grid">
+    <div class="card">
+        <img src="Tent.png.jpg" alt="Tent.png.jpg">
+      <h3>Tent</h3>
+      <p>$299.99</p>
+     <div class="background"> <button onclick="addToCart('Tent',299.99,'Tent.png.jpg')">Add to Cart</button></div>
+    </div>
+    <div class="card">
+        <img src="backpack.webp" alt="backpack">
+      <h3>Backpack</h3>
+      <p>$189.99</p>
+      <div class="background"><button onclick="addToCart('Backpack',189.99,'backpack.webp')">Add to Cart</button></div>
+    </div>
+    <div class="card">
+         <img src="lighting.webp" alt="Lighting">
+        <h3>Lighting</h3>
+       
+        <p>$85</p>
+       <div class="background"> <button onclick="addToCart('Lighting',85,'lighting.webp')">Add to Cart</button></div>
+
+    </div>
+    <div class="card">
+      <img src="Camping Gas Canister Stand Legs _ Portable Stove Stability Base (EN417).jpg" alt="Gas canister">
+      <h3>Gas Canister</h3>
+      <p>$79.99</p>
+     <div class="background"> <button onclick="addToCart('CampingGasCansiter',79.99,'Camping Gas Canister Stand Legs _ Portable Stove Stability Base (EN417).jpg')">Add to Cart</button></div>
+    </div>
+    <div class="card">
+      <img src="Hiking boots.jpg" alt="Hiking boots">
+      <h3>Trail Runner Hiking Boots</h3>
+      <p>$139.99</p>
+     <div class="background"> <button onclick="addToCart('Hiking boots',139.99,'Hiking boots.jpg')">Add to Cart</button></div>
+     
+    </div>
+  </div>
+</section>
+<section class="promo">
+  <h2 class="title">Special Promotions</h2>
+  <p class="subtitle">Limited time offers on selected items</p>
+
+  <div class="promo-container">
+
+    <!-- Card 1 -->
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="8-Person-Instant-Tent-Coleman.jpg" alt="Instant camping tent">
+      </div>
+      <h3>Alpine Pro 4-Person Tent</h3>
+      <div class="price">
+        <span class="new">$299.99</span>
+        <span class="old">$399.99</span>
+      </div>
+      <a class="promo-button" href="viewforTent.html">View Deal</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="image-50.jpeg" alt="Winter sleeping bag">
+      </div>
+      <h3>Winter Pro Sleeping Bag</h3>
+      <div class="price">
+        <span class="new">$149.99</span>
+        <span class="old">$199.99</span>
+      </div>
+      <a class="promo-button" href="ViewforBag.html">View Deal</a>
+    </div>
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="20 Incredible Camping Gear.jpg" alt="Camping gear collection">
+      </div>
+      <h3>20 Incredible Camping Gear</h3>
+      <div class="price">
+        <span class="new">$120.99</span>
+        <span class="old">$199.99</span>
+      </div>
+      <a class="promo-button" href="ViewforBag.html">View Deal</a>
+    </div>
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="CampingLampe.jpg" alt="Camping lamp">
+      </div>
+      <h3>Camping Lamp</h3>
+      <div class="price">
+        <span class="new">$85.99</span>
+        <span class="old">$129.99</span>
+      </div>
+      <a class="promo-button" href="ViewforLamp.html">View Deal</a>
+    </div>
+
+  </div>
+</section>
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+  <p class="subtitle">What our customers say about us</p>
+
+  <div class="review-container">
+
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Amazing tent! Set it up in less than 10 minutes and it stayed completely dry during a heavy rainstorm. Highly recommend!"
+      </p>
+      <h4>Sarah Johnson</h4>
+      <span>Alpine Pro 4-Person Tent</span>
+    </div>
+
+    <div class="card">
+      <div class="stars">★★★★☆</div>
+      <p>
+        "Great quality tent. Spacious enough for 4 people with gear. Only wish it came in more colors."
+      </p>
+      <h4>Mike Chen</h4>
+      <span>Alpine Pro 4-Person Tent</span>
+    </div>
+
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Best backpack I've ever owned! The adjustable torso is a game-changer. Carried it on a 5-day trek with no issues."
+      </p>
+      <h4>Emily Rodriguez</h4>
+      <span>Expedition 65L Backpack</span>
+    </div>
+
+  </div>
+</section>
+<section>
+<footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h2>CPS</h2>
+        <p>Your trusted partner for quality camping gear since 2020.</p>
+      </div>
+<div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="products.html">Products</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+<div class="footer-col">
+        <h3>Categories</h3>
+        <p>Tents</p>
+        <p>Backpacks</p>
+        <p>Sleeping Bags</p>
+        <p>Cooking Equipment</p>
+      </div>
+<div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: heina4649@gmail.com</p>
+        <p>Phone: +959 756782324</p>
+        <p>Address: Outdoor Ave</p>
+      </div>
+ </div>
+ <p class="copyright">© 2026 CampingPro</p>
+  </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

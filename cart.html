@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<header>
+  <h1>CPS</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+     <a href="About.html">About</a>
+    <a href="cart.html">Cart</a>
+    <a href="Login.html">Login</a>
+  </nav>
+</header>
+<section class="cart">
+
+  <h2>Your Cart</h2>
+
+  <div class="cart-container">
+
+    <div class="cart-items">
+      <div id="cartList" class="cart-list"></div>
+      <div id="emptyCartMessage" class="empty-cart">Your cart is empty.</div>
+    </div>
+
+    <div class="cart-summary">
+      <h3>Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">$0.00</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span id="shipping">$0.00</span>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total</span>
+        <span id="total">$0.00</span>
+      </div>
+
+      <button class="checkout-btn" type="button" onclick="checkout()">Checkout</button>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

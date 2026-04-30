@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="productstyle.css">
+</head>
+<body>
+<header>
+  <h1>CPS</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+     <a href="About.html">About Us</a>
+    <a href="cart.html">Cart</a>
+    <a href="Login.html">Login</a>
+    <a href="membership.html">Membership</a>
+  </nav>
+</header>
+<section class="container">
+  <h1>Our Products</h1>
+  <p class="sub-title">Browse our complete collection of camping gear</p>
+
+  <!-- Filter Box -->
+  <div class="filter-box">
+    <h3>🔽 Filters</h3>
+
+    <div class="filter-top">
+      <!-- Category -->
+      <div>
+        <p>Category</p>
+        <div class="buttons">
+          <button onclick="filterProducts(event, 'all')" class="active-btn">All Products</button>
+          <button onclick="filterProducts(event, 'tent')">Tents</button>
+          <button onclick="filterProducts(event, 'bag')">Backpacks</button>
+          <button onclick="filterProducts(event, 'sleep')">Special Promotions</button>
+          <button onclick="filterProducts(event, 'cook')">Cooking</button>
+          <button onclick="filterProducts(event, 'light')">Lighting</button>
+          <button onclick="filterProducts(event, 'foot')">Footwear</button>
+        </div>
+      </div>
+
+      <!-- Sort -->
+      
+
+    </div>
+  </div>
+  </section>
+
+  <section class="ShowingProducts">
+    <h5>Showing 5 products</h5>
+    <div class="grid">
+      <div class="card" data-category="light">
+         <img src="lighting.webp" alt="Lighting">
+        <h3>Lighting</h3>
+       
+        <p>$85</p>
+       <div class="background"> <button onclick="addToCart('Lighting',85,'lighting.webp')">Add to Cart</button></div>
+
+    </div>
+    <div class="card" data-category="cook">
+      <img src="Camping Gas Canister Stand Legs _ Portable Stove Stability Base (EN417).jpg" alt="Gas canister">
+      <h3>Gas Canister</h3>
+      <p>$79.99</p>
+     <div class="background"> <button onclick="addToCart('CampingGasCansiter',79.99,'Camping Gas Canister Stand Legs _ Portable Stove Stability Base (EN417).jpg')">Add to Cart</button></div>
+    </div>
+    <div class="card" data-category="foot">
+      <img src="Hiking boots.jpg" alt="Hiking boots">
+      <h3>Trail Runner Hiking Boots</h3>
+      <p>$139.99</p>
+     <div class="background"> <button onclick="addToCart('Trail Runner Hiking Boots', 139.99,'Hiking boots.jpg')">Add to Cart</button></div>
+    </div>
+  </div>
+  </section>
+  <section class="promo">
+  <h2>Special Promotions</h2>
+  <p class="subtitle">Limited time offers on selected items</p>
+
+  <div class="promo-container">
+
+    <!-- Card 1 -->
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="8-Person-Instant-Tent-Coleman.jpg" alt="Instant camping tent">
+      </div>
+      <h3>Alpine Pro 4-Person Tent</h3>
+      <div class="price">
+        <span class="new">$299.99</span>
+        <span class="old">$399.99</span>
+      </div>
+      <a class="promo-button" href="viewforTent.html">View Deal</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="image-50.jpeg" alt="Winter sleeping bag">
+      </div>
+      <h3>Winter Pro Sleeping Bag</h3>
+      <div class="price">
+        <span class="new">$149.99</span>
+        <span class="old">$199.99</span>
+      </div>
+      <a class="promo-button" href="ViewforBag.html">View Deal</a>
+    </div>
+     <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="20 Incredible Camping Gear.jpg" alt="Camping gear collection">
+      </div>
+      <h3>20 Incredible Camping Gear</h3>
+      <div class="price">
+        <span class="new">$120.99</span>
+        <span class="old">$199.99</span>
+      </div>
+      <a class="promo-button" href="ViewforBag.html">View Deal</a>
+    </div>
+     <div class="promo-card">
+      <div class="img-box">
+        <span class="badge">25% OFF</span>
+        <img src="CampingLampe.jpg" alt="Camping lamp">
+      </div>
+      <h3>Camping Lamp</h3>
+      <div class="price">
+        <span class="new">$85.99</span>
+        <span class="old">$129.99</span>
+      </div>
+      <a class="promo-button" href="ViewforLamp.html">View Deal</a>
+    </div>
+
+  </div>
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h2>CPS</h2>
+        <p>Your trusted partner for quality camping gear since 2020.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="products.html">Products</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <p>Tents</p>
+        <p>Backpacks</p>
+        <p>Sleeping Bags</p>
+        <p>Cooking Equipment</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: heina4649@gmail.com</p>
+        <p>Phone: +959 756782324</p>
+        <p>Address: Outdoor Ave</p>
+      </div>
+
+    </div>
+
+    <p class="copyright">© 2026 CampingPro</p>
+  </footer>
+
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

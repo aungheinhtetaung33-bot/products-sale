@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<header>
+  <h1>CPS</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+     <a href="About.html">About</a>
+    <a href="cart.html">Cart</a>
+    <a href="Login.html">Login</a>
+  </nav>
+</header>
+<h1>Register</h1>
+<section class="auth">
+
+  <div class="auth-card">
+
+    <h2>Create Account</h2>
+    <p>Sign up to start your adventure</p>
+
+    <form onsubmit="register(event)">
+
+      <label>Full Name</label>
+      <input type="text" placeholder="John Doe">
+
+      <label>Email</label>
+      <input type="email" placeholder="john@example.com">
+
+      <label>Password</label>
+      <input type="password" placeholder="********">
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="********">
+
+      <button class="signup-btn">Sign Up</button>
+
+    </form>
+
+    <div class="divider">OR</div>
+
+    <div class="social">
+      <button>Google</button>
+      <button>Facebook</button>
+    </div>
+
+    <p class="login-link">
+      Already have an account? <a href="Login.html">Login</a>
+    </p>
+
+  </div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>

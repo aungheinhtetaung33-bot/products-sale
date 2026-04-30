@@ -1,0 +1,372 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 40px;
+}
+
+.sub-title {
+  color: rgb(11, 9, 9);
+}
+
+/* Filter Box */
+.filter-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.filter-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  color: black;
+}
+
+.active-btn {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+}
+
+.card h3,
+.card p {
+  margin: 12px 0;
+}
+
+.card .background {
+  margin-top: auto;
+  width: 100%;
+}
+
+.card button {
+  width: 100%;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card button:hover,
+button:hover {
+  background-color: orange;
+}
+button:hover{
+    background-color: orange;
+}
+footer {
+  background: #515050;
+  padding: 40px 0px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  margin: auto;
+  max-width:200px;
+  padding: 0%;
+}
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer h3, .footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .grid {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .card {
+    max-width: 320px;
+    min-height: auto;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.promo {
+  background: linear-gradient(to right, #2e7d32, #4caf50);
+  padding: 60px 40px;
+  color: white;
+}
+
+.promo h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Container */
+.promo-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Card */
+.promo-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  backdrop-filter: blur(10px);
+}
+
+/* Image */
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5252;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Text */
+.promo-card h3 {
+  margin: 15px 0;
+}
+
+/* Price */
+.price {
+  margin-bottom: 15px;
+}
+
+.price .new {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price .old {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+/* Button */
+button {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: #2e7d32;
+}
+
+.promo-button {
+  display: inline-block;
+  background: white;
+  color: #2e7d32;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.promo-button:hover {
+  background: #e8f5e9;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+  .container {
+    padding: 20px;
+  }
+
+  .filter-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons button {
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampingPro Login</title>
+  <link rel="stylesheet" href="Loginstyle.css">
+</head>
+<body>
+
+  <header>
+  <h1>CPS</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+     <a href="About.html">About Us</a>
+    <a href="cart.html">Cart</a>
+    <a href="Login.html">Login</a>
+    <a href="membership.html">Membership</a>
+  </nav>
+</header>
+
+  <!-- Login Card -->
+  <div class="container">
+    <div class="card">
+      <h2>Welcome Back</h2>
+      <p>Sign in to your account or create a new one</p>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="active" type="button">Login</button>
+        <button type="button" onclick="window.location.href='register.html'">Sign Up</button>
+      </div>
+
+      <!-- Form -->
+      <form onsubmit="login(event)">
+        <label>Email</label>
+        <input type="email" placeholder="john@example.com">
+
+        <div class="password-row">
+          <label>Password</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <input type="password" placeholder="********">
+
+        <button class="btn">Sign In</button>
+      </form>
+
+      <div class="divider">OR CONTINUE WITH</div>
+
+      <div class="social">
+        <button>Google</button>
+        <button>Facebook</button>
+      </div>
+
+      <p class="terms">
+        By continuing, you agree to <a href="Termsandpolicypage.html">Terms &amp; Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h2>CPS</h2>
+        <p>Your trusted partner for quality camping gear since 2020.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="products.html">Products</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <p>Tents</p>
+        <p>Backpacks</p>
+        <p>Sleeping Bags</p>
+        <p>Cooking Equipment</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: heina4649@gmail.com</p>
+        <p>Phone: +959 756782324</p>
+        <p>Address: Outdoor Ave</p>
+      </div>
+
+    </div>
+
+    <p class="copyright">© 2026 CampingPro</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

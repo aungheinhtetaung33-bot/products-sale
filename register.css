@@ -1,0 +1,161 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  margin:  0 10px;
+  text-decoration: none;
+}
+nav a:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+/* Page center */
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+/* Card */
+.auth-card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Title */
+.auth-card h2 {
+  margin-bottom: 10px;
+}
+
+.auth-card p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Form */
+form {
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1f7a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.signup-btn:hover {
+  background: #1e3a3a;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Social */
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+}
+.social button:hover {
+  background: #eee;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.login-link a {
+  color: #1e3a3a;
+  text-decoration: none;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .auth {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+}

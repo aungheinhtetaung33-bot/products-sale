@@ -1,0 +1,443 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.6rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2e7d32;
+    padding: 10px 0;
+    z-index: 10;
+  }
+  .nav.show {
+    display: flex;
+  }
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 50px 20px;
+  }
+  .features {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4');
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  padding: 100px;
+  text-align: center;
+}
+.hero button,
+.promo-card button,
+.card button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.hero button {
+  margin-top: 20px;
+}
+
+button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.promo-button {
+  display: inline-block;
+  background: white;
+  color: #2e7d32;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.promo-button:hover {
+  background: #e8f5e9;
+}
+
+button:hover {
+  background-color: #1f7a2e;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+}
+.features {
+    background-color: rgb(206, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  text-align: center;
+}
+
+.feature-box {
+  flex: 1;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: green;
+  margin: 0 auto 15px;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.feature-box p {
+  color: gray;
+  font-size: 14px;
+}
+/* Section Background */
+.promo {
+  background: linear-gradient(to right, #2e7d32, #4caf50);
+  padding: 60px 40px;
+  color: white;
+}
+
+.promo h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Container */
+.promo-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Card */
+.promo-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  backdrop-filter: blur(10px);
+}
+
+/* Image */
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5252;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Text */
+.promo-card h3 {
+  margin: 15px 0;
+}
+
+/* Price */
+.price {
+  margin-bottom: 15px;
+}
+
+.price .new {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price .old {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+/* Button */
+button {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.reviews {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: rgb(51, 45, 45);
+  margin-bottom: 40px;
+}
+
+.review-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  margin: 0;
+}
+
+.card span {
+  font-size: 12px;
+  color: gray;
+}
+.footer {
+  background: #515050;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  margin: 10px;
+  min-width: 200px;
+}
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+
+.footer h3, .footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  nav a {
+    width: 100%;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .grid,
+  .promo-container,
+  .review-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card,
+  .promo-card {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.title {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
